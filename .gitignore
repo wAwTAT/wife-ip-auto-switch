@@ -1,0 +1,19 @@
+# 运行期生成，包含本机 SSID / IP 等个人信息，不提交
+config.json
+config.json.tmp
+
+# 运行时日志
+logs/
+*.log
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.pytest_cache/
+
+# 编辑器 / 操作系统
+.vscode/
+.idea/
+Thumbs.db
+desktop.ini
