@@ -1,4 +1,4 @@
-# 网络 IP 自动切换 (wifi-ip-auto-switch)
+# 网络 IP 自动切换
 
 > 一个面向 Windows 的小工具：根据当前连接的 Wi-Fi SSID 或有线适配器名称，自动切换对应的固定 IP、网关与 DNS。
 
@@ -206,7 +206,7 @@ python wifi_ip_switch.py
 ## 项目结构
 
 ```text
-wifi-ip-auto-switch/
+wife-ip-auto-switch/
 ├── wifi_ip_switch.py   # 主程序：网络检测、规则匹配、应用、GUI、后台监控
 ├── 启动.vbs            # 无窗口启动器（自动请求管理员权限）
 ├── config.json         # 本地规则配置（首次运行自动生成，不提交到 Git）
@@ -229,7 +229,7 @@ wifi-ip-auto-switch/
 
 ```powershell
 git clone <repo-url>
-cd wifi-ip-auto-switch
+cd wife-ip-auto-switch
 python wifi_ip_switch.py --diagnose   # 先做只读诊断
 python wifi_ip_switch.py              # 打开界面
 ```
@@ -246,4 +246,4 @@ A small Windows utility that automatically applies a static IPv4 address, gatewa
 
 ## License
 
-[MIT](LICENSE) © 2026 wifi-ip-auto-switch contributors
+[MIT](LICENSE) © 2026 wife-ip-auto-switch contributors
