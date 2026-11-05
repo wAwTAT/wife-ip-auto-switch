@@ -69,7 +69,7 @@
 
 ## 配置文件示例
 
-默认配置文件为 `config.json`（首次运行会自动生成，已被 `.gitignore` 忽略，避免提交个人网络信息）：
+默认配置文件为 `config.json`（首次运行会自动生成）：
 
 ```json
 {
@@ -218,27 +218,8 @@ wife-ip-auto-switch/
 ## 安全与隐私
 
 - 程序不访问互联网，不上传任何数据；仅在本机读取网络配置并修改本机网络设置。
-- 所有规则保存在本地 `config.json`，请勿将含个人 SSID / 内网 IP 的配置提交到公开仓库。
 - 程序需要管理员权限运行，建议在使用前阅读源码。
 
-## 开发与贡献
-
-欢迎提交 Issue 或 Pull Request。
-
-开发环境：
-
-```powershell
-git clone <repo-url>
-cd wife-ip-auto-switch
-python wifi_ip_switch.py --diagnose   # 先做只读诊断
-python wifi_ip_switch.py              # 打开界面
-```
-
-提交前请确保：
-
-- `python -m py_compile wifi_ip_switch.py` 通过；
-- 不提交 `config.json`、`logs/`、`__pycache__/`；
-- 涉及网络切换的改动请在测试网络验证。
 
 ## English
 
